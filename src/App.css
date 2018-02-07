@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -25,4 +25,59 @@
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+} */
+
+.App-body{
+  background: transparent url("blueback.jpg") repeat fixed 0 0;
+  min-height: 900px;
+}
+
+#nav-wrap {
+  background-color: #222;
+  font: 12px 'opensans-bold';
+  font-family: 'sans-serif';
+  width: 100%;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  margin: 0 auto;
+  z-index: 100;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+ul {
+  list-style: none outside;
+  
+}
+
+ul#nav {
+  text-align: center;
+  font-weight: bold;
+  margin: 0;
+  
+}
+
+ul#nav li {
+  
+  position: relative;
+  display: inline-block;
+  padding: 20px;
+  cursor: pointer;
+  
+  
+}
+
+ul#nav li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+ul#nav li.current a {
+  color: #F06000;
+}
+
+
+.list-item {
+  background-color: rgba(255, 255, 255, 0.1);
 }
