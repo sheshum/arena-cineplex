@@ -1,19 +1,28 @@
-body {
-    background: transparent url("../images/blueback.jpg") repeat fixed 0 0; 
-  }
   
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: block;
+  }
+
+  #before_nav{
+    
+    background: transparent url("../images/header_sun.jpg") no-repeat fixed 0 0;
+    width: inherit;
+    height: 80px;
+
+  }
+
   #nav-wrap {
     background-color: #222;
     font: 12px 'opensans-bold';
     font-family: 'sans-serif';
-    width: 100%;
+    width: inherit;
     text-transform: uppercase;
     letter-spacing: 2.5px;
-    margin: 0 auto;
-    z-index: 100;
-    position: fixed;
-    left: 0;
-    top: 0;
+    margin: 0 auto;      
   }
   
   ul {
@@ -33,9 +42,7 @@ body {
     position: relative;
     display: inline-block;
     padding: 20px;
-    cursor: pointer;
-    
-    
+    cursor: pointer;       
   }
   
   ul#nav li a {
