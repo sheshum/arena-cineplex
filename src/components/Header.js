@@ -10,11 +10,17 @@ class Header extends Component{
             <div id="nav-wrapper">
                 <nav id="nav-wrap">
                     <ul id="nav">
-                      <li><NavLink to="/home" activeStyle={{color: "#F06000"}}>Naslovna</NavLink></li>
-                      <li><NavLink to="/" activeStyle={{color: "#F06000"}}>Repertoar</NavLink></li>
+                      <li><NavLink to="/home" activeStyle={{color: "#F06000"}} >Naslovna</NavLink></li>
+                      <li><NavLink to="/repertoar" activeStyle={{color: "#F06000"}} >Repertoar</NavLink></li>
                       <li><a>Cenovnik</a></li>
-                      <li><a>O nama</a></li>
+                      <li>
+                          <a className="dropdown">O nama</a>
+                          <div id="fuck" className="dropdown-content">
+                              Hello World!
+                          </div>
+                      </li>
                       <li><a>Kontakt</a></li>
+                      
                     </ul>
                   </nav>
             </div>        
