@@ -62,8 +62,9 @@
     
   }
   
-  ul#nav li.current a {
+  ul#nav li a.active {
     color: #F06000;
+    transition: 1s ;
   }
 
 ul#nav li a.dropdown {
@@ -85,6 +86,8 @@ ul#nav li a.dropdown {
   
 
   ul#nav li a.dropdown:hover + .dropdown-content{
-      opacity: 1;  
+      opacity: 1;
+      transition: .8s ease;
+        
   } 
   

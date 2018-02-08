@@ -12,8 +12,8 @@ class Header extends Component{
             <div id="nav-wrapper">
                 <nav id="nav-wrap">
                     <ul id="nav">
-                      <li><NavLink to="/home" activeStyle={{color: "#F06000"}} >Naslovna</NavLink></li>
-                      <li><NavLink to="/repertoar" activeStyle={{color: "#F06000"}} >Repertoar</NavLink></li>
+                      <li><NavLink to="/home" >Naslovna</NavLink></li>
+                      <li><NavLink to="/repertoar"  >Repertoar</NavLink></li>
                       <li><a>Cenovnik</a></li>
                       <li>
                           <a className="dropdown">O nama</a>
