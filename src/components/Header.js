@@ -16,8 +16,7 @@ class Header extends Component{
                       <li><a>Kontakt</a></li>
                     </ul>
                   </nav>
-            </div>
-                    
+            </div>        
           </div>
         );
     }

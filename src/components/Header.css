@@ -1,17 +1,17 @@
   
   .header {
-    position: fixed;
+   /* position: fixed;
     top: 0;
-    left: 0;
+    left: 0; */
     width: 100%;
     display: block;
   }
 
   #before_nav{
-    
-    background: transparent url("../images/header_sun.jpg") no-repeat fixed 0 0;
-    background-size: contain;
-    width: inherit;
+    background-color: #e8c13f;
+    /*background: transparent url("../images/header_sun.jpg") no-repeat fixed 0 0;
+    background-size: contain; */
+    width: 100%;
     height: 100px;
 
   }
@@ -20,7 +20,7 @@
     background-color: #222;
     font: 12px 'opensans-bold';
     font-family: 'sans-serif';
-    width: inherit;
+    width: 100%;
     text-transform: uppercase;
     letter-spacing: 2.5px;
     margin: 0 auto;      
@@ -47,8 +47,14 @@
   }
   
   ul#nav li a {
-    color: #fff;
+    color: #d8d2d2;
     text-decoration: none;
+    cursor: pointer;  
+  }
+
+  ul#nav li a:hover {
+    color: #fff;
+    
   }
   
   ul#nav li.current a {
