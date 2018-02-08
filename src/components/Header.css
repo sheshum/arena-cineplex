@@ -8,12 +8,17 @@
   }
 
   #before_nav{
-    background-color: #e8c13f;
-    /*background: transparent url("../images/header_sun.jpg") no-repeat fixed 0 0;
-    background-size: contain; */
+    /*background-color: #e8c13f; */
+    background: transparent /*url("../images/header_sun.jpg") no-repeat fixed 0 0*/;
+    background-size: contain; 
     width: 100%;
     height: 100px;
 
+  }
+
+  #before_nav img {
+    width: 100%;
+    height: inherit;
   }
 
   #nav-wrap {

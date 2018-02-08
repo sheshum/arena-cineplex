@@ -6,7 +6,9 @@ class Header extends Component{
     render(){
         return(
           <div className="header">
-            <div id="before_nav"></div>
+            <div id="before_nav">
+              <img src="http://www.liranz.com/wp-content/uploads/2016/11/header10.jpg" alt=""/>
+            </div>
             <div id="nav-wrapper">
                 <nav id="nav-wrap">
                     <ul id="nav">

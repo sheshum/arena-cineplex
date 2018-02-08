@@ -16,12 +16,6 @@ class App extends Component {
           <Route path={"/repertoar"} component={Repertoar}/>
         </div>
      </Router>
-
-      /* <div className="">
-        <Header />
-        <Repertoar />
-        <Home />  
-      </div>  */
     );
   }
 }
