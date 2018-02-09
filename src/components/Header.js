@@ -13,15 +13,15 @@ class Header extends Component{
                 <nav id="nav-wrap">
                     <ul id="nav">
                       <li><NavLink to="/home" >Naslovna</NavLink></li>
-                      <li><NavLink to="/repertoar"  >Repertoar</NavLink></li>
-                      <li><a>Cenovnik</a></li>
+                      <li><NavLink to="/repertoar">Repertoar</NavLink></li>
+                      <li><NavLink to="/prices">Cenovnik</NavLink></li>
                       <li>
                           <a className="dropdown">O nama</a>
                           <div id="fuck" className="dropdown-content">
                               Hello World!
                           </div>
                       </li>
-                      <li><a>Kontakt</a></li>
+                      <li><NavLink to="/contact">Kontakt</NavLink></li>
                       
                     </ul>
                   </nav>
