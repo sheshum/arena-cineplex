@@ -8,14 +8,16 @@ class Repertoar extends Component{
 
     constructor(props){
         super(props);
-        
+      
         this.state = {
-            repertoar: []
+            repertoar: [],
+          
         };
     }
 
     componentWillMount(){
-        this.getRepertoarList();
+          
+            this.getRepertoarList();   
     }
     
     getRepertoarList(){
@@ -25,6 +27,7 @@ class Repertoar extends Component{
             url: "https://api.mlab.com/api/1/databases/arenacineplex/collections/repertoar?apiKey=jNnNnruij1tLrOCwXDfWlDbyXhZOJNwN"
         }).then((response) => {
             this.setState({repertoar: response.data});
+           
         }).catch((err) => {
             console.log(err);
         });
@@ -40,6 +43,7 @@ class Repertoar extends Component{
      
         if(true){
             repItems = this.state.repertoar.map((item, i) => {
+                
                 return(
                     <div key={i}>
                         <RepItem item={item} />

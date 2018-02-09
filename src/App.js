@@ -7,9 +7,15 @@ import Prices from "./components/Prices";
 import Contact from "./components/Contact";
 
 class App extends Component {
-
+  
+  
   render() {
-
+    
+    const RepertoarPage = (props) => {
+        return(
+          <Repertoar isLoaded={false} /> //pokusao sam da prosledim prop da bih implementirao lazy lodaing
+        );
+    };
     return (
 
       <Router>
@@ -17,7 +23,7 @@ class App extends Component {
           <Route path={"/"} component={Root}/>
           <Route exact path={"/"} component={Repertoar}/>        
           <Route path={"/home"} component={Home}/>
-          <Route path={"/repertoar"} component={Repertoar}/>
+          <Route path={"/repertoar"} render={RepertoarPage}/>
           <Route path={"/prices"} component={Prices}/>
           <Route path={"/contact"} component={Contact}/>
         </div>

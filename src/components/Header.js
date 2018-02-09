@@ -15,11 +15,14 @@ class Header extends Component{
                       <li><NavLink to="/home" >Naslovna</NavLink></li>
                       <li><NavLink to="/repertoar">Repertoar</NavLink></li>
                       <li><NavLink to="/prices">Cenovnik</NavLink></li>
-                      <li>
+                      <li id="about">
                           <a className="dropdown">O nama</a>
-                          <div id="fuck" className="dropdown-content">
-                              Hello World!
-                          </div>
+                          <ul className="dropdown-content">
+                           <li>O NAMA</li>
+                           <li>VESTI</li>
+                           <li>GALERIJE</li>
+                           <li>USLUGE</li>
+                          </ul>
                       </li>
                       <li><NavLink to="/contact">Kontakt</NavLink></li>
                       
