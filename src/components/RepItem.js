@@ -32,7 +32,7 @@ class RepItem extends Component{
                 <li className="col-md-12 rep-item">
                     <div className="margin-o">
                     <div className="col-md-3 center">
-                        <a href="#"><img className="rep-img" src={image} alt=""/></a>
+                        <a><img className="rep-img" src={image} alt=""/></a>
                     </div>
                     <div className="col-md-5">
                         <div className="details-header">
