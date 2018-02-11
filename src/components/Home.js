@@ -5,8 +5,8 @@ class Home extends Component{
     render(){
         return(
             <div className="container">
-            <h1>Naslovna</h1>
-        </div>
+                <h1>Naslovna</h1>
+            </div>
         );
     }
    

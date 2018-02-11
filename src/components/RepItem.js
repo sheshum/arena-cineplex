@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {NavLink} from 'react-router-dom';
 
 class RepItem extends Component{
 
@@ -47,7 +48,7 @@ class RepItem extends Component{
                             <div><strong>Distributer: </strong>{distributer} </div>
                             <div><strong>Zemlja porekla: </strong>{country} </div>
                             <div><strong>Godina Proizvodnje: </strong>{year} </div>
-                            <div className="btn_details"><a><button className="btn btn-lg btn-default btn-block">Detaljnije</button></a></div>
+                            <div className="btn_details"><NavLink to="/details"><button className="btn btn-lg btn-default btn-block">Detaljnije</button></NavLink></div>
                         </div>
                     </div>
                     <div className="col-md-4 center">

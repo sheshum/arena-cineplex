@@ -8,6 +8,7 @@ import Home from "./components/Home";
 import Repertoar from "./components/Repertoar";
 import Prices from "./components/Prices";
 import Contact from "./components/Contact";
+import Details from "./components/Details";
 
 class App extends Component {
 
@@ -61,6 +62,7 @@ class App extends Component {
           <Route path={"/repertoar"} render={props => <Repertoar {...props} repertoar={repVar}/>}/>
           <Route path={"/prices"} component={Prices}/>
           <Route path={"/contact"} component={Contact}/>
+          <Route path={"/details"} component={Details} />
         </div>
      </Router>
     );
