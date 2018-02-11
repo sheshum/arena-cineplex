@@ -18,7 +18,7 @@ class App extends Component {
           repertoar: []
         
       };
-      console.log("App constructor");
+      
   }
 
 
