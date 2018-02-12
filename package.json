@@ -1,5 +1,5 @@
 {
-  "name": "react-mutant",
+  "name": "arena-cineplex",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -12,6 +12,7 @@
     "react-router-with-props": "^0.1.1",
     "react-scripts": "^1.1.0",
     "redux": "^3.7.2",
+    "redux-promise": "^0.5.3",
     "youtube-api-search": "0.0.5"
   },
   "scripts": {

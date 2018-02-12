@@ -1,12 +1,28 @@
-import React, {Component} from "react";
+import React from "react";
+import {Component} from "react";
+import {connect} from "react-redux";
+import { bindActionCreators } from "redux";
+import {getRepertoarList} from "../actions/index";
 
 import "./Repertoar.css";
 
-import RepItem from "./RepItem";
+import RepItem from "../components/RepItem";
 
 class Repertoar extends Component{
 
+     constructor(props){
+        super(props);   
+
+        this.props.getRepertoarList();
+        console.log('repertoar constructor');
+        
+    } 
     
+    
+    componentWillMount(){
+       
+    }
+
     render(){
         
         let repItems;
@@ -44,4 +60,16 @@ class Repertoar extends Component{
     }
 }
 
-export default Repertoar;
+
+
+function mapDispatchToProps(dispatch){
+        return bindActionCreators({ getRepertoarList: getRepertoarList }, dispatch);
+}
+
+function mapStateToProps(state){
+    return {
+        repertoar: state.repertoar
+    };
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Repertoar);

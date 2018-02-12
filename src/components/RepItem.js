@@ -13,6 +13,8 @@ class RepItem extends Component{
         }
     }
 
+    
+
     render(){
 
         if(this.props.item){

@@ -1,10 +1,13 @@
-  
+  body {
+    overflow: scroll;
+  }
   .header {
    /* position: fixed;
     top: 0;
     left: 0; */
     width: 100%;
     display: block;
+    
   }
 
   #before_nav{
@@ -22,6 +25,7 @@
   }
 
   #nav-wrap {
+   
     background-color: #222;
     font: 12px 'opensans-bold';
     font-family: 'sans-serif';
@@ -29,6 +33,14 @@
     text-transform: uppercase;
     letter-spacing: 2.5px;
     margin: 0 auto;      
+  }
+
+  div#nav-wrapper {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0; /* required */
+  z-index: 1;
+  
   }
   
   ul {
